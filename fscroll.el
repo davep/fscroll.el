@@ -1,9 +1,13 @@
-;;; fscroll.el - Make scroll-{up,down} go all the way.
+;;; fscroll.el --- Make scroll-{up,down} go all the way.
 ;; Copyright 2002 by Dave Pearson <davep@davep.org>
 ;; $Revision: 1.1 $
 
+;;; Commentary:
+
 ;; fscroll.el is free software distributed under the terms of the GNU
 ;; General Public Licence, version 2. For details see the file COPYING.
+
+;;; Code:
 
 (defadvice scroll-down (around full-scroll-down activate)
   "Ensure that `scroll-down' goes right to the start of the buffer."

@@ -1,6 +1,10 @@
 ;;; fscroll.el --- Make scroll-{up,down} go all the way.
 ;; Copyright 2002 by Dave Pearson <davep@davep.org>
-;; $Revision: 1.1 $
+
+;; Author: Dave Pearson <davep@davep.org>
+;; Version: 1.1
+;; Keywords: convenience
+;; URL: https://github.com/davep/fscroll.el
 
 ;;; Commentary:
 

@@ -1,4 +1,7 @@
 # fscroll.el
+
+## Commentary:
+
 Make scroll-{up,down} go all the way.
 
 Out of the box GNU Emacs only scrolls the buffer when using `scroll-down`

@@ -34,13 +34,15 @@
   "Ensure that `scroll-down' goes right to the start of the buffer."
   (condition-case nil
       ad-do-it
-    (beginning-of-buffer (goto-char (point-min)))))
+    (beginning-of-buffer
+     (goto-char (point-min)))))
 
 (defadvice scroll-up (around full-scroll-up activate)
   "Ensure that `scroll-up' goes right to the end of the buffer."
   (condition-case nil
       ad-do-it
-    (end-of-buffer (goto-char (point-max)))))
+    (end-of-buffer
+     (goto-char (point-max)))))
 
 (provide 'fscroll)
 

@@ -31,14 +31,20 @@
 ;;; Code:
 
 (defadvice scroll-down (around full-scroll-down activate)
-  "Ensure that `scroll-down' goes right to the start of the buffer."
+  "Have `scroll-down' go right to the start of the buffer.
+
+If a `beginning-of-buffer' error is thrown, `point' is moved to
+`point-min'."
   (condition-case nil
       ad-do-it
     (beginning-of-buffer
      (goto-char (point-min)))))
 
 (defadvice scroll-up (around full-scroll-up activate)
-  "Ensure that `scroll-up' goes right to the end of the buffer."
+  "Have `scroll-up' go right to the end of the buffer.
+
+If a `end-of-buffer' error is thrown, `point' is moved to
+`point-max'."
   (condition-case nil
       ad-do-it
     (end-of-buffer

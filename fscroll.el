@@ -1,5 +1,5 @@
 ;;; fscroll.el --- Make scroll-{up,down} go all the way.
-;; Copyright 2002 by Dave Pearson <davep@davep.org>
+;; Copyright 2002-2017 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
 ;; Version: 1.1
